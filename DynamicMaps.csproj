@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D350553A-3F31-4245-828F-799650DB611A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DynamicMaps</RootNamespace>
+    <AssemblyName>DynamicMaps</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony" />
+    <Reference Include="Assembly-CSharp">
+      <HintPath>F:\EFT2\EscapeFromTarkov_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx" />
+    <Reference Include="Comfort">
+      <HintPath>F:\EFT2\EscapeFromTarkov_Data\Managed\Comfort.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>F:\EFT2\EscapeFromTarkov_Data\Managed\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween.Modules">
+      <HintPath>F:\EFT2\EscapeFromTarkov_Data\Managed\DOTween.Modules.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>F:\EFT2\EscapeFromTarkov_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="spt-reflection" />
+    <Reference Include="System">
+      <HintPath>..\..\dnSpy-net-win64\bin\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\dnSpy-net-win64\bin\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>F:\EFT2\EscapeFromTarkov_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>F:\EFT2\EscapeFromTarkov_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>F:\EFT2\EscapeFromTarkov_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>F:\EFT2\EscapeFromTarkov_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>F:\EFT2\EscapeFromTarkov_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>F:\EFT2\EscapeFromTarkov_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>F:\EFT2\EscapeFromTarkov_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>F:\EFT2\EscapeFromTarkov_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuildInfo.cs" />
+    <Compile Include="ConfigurationManagerAttributes.cs" />
+    <Compile Include="Config\Settings.cs" />
+    <Compile Include="Data\BoundingRectangle.cs" />
+    <Compile Include="Data\BoundingRectangularSolid.cs" />
+    <Compile Include="Data\MapDef.cs" />
+    <Compile Include="Data\MapLabelDef.cs" />
+    <Compile Include="Data\MapLayerDef.cs" />
+    <Compile Include="Data\MapMarkerDef.cs" />
+    <Compile Include="DrakiaXYZ\VersionChecker\VersionChecker.cs" />
+    <Compile Include="DynamicMarkers\AirdropMarkerProvider.cs" />
+    <Compile Include="DynamicMarkers\BackpackMarkerProvider.cs" />
+    <Compile Include="DynamicMarkers\BTRMarkerProvider.cs" />
+    <Compile Include="DynamicMarkers\CorpseMarkerProvider.cs" />
+    <Compile Include="DynamicMarkers\ExtractMarkerProvider.cs" />
+    <Compile Include="DynamicMarkers\HiddenStashMarkerProvider.cs" />
+    <Compile Include="DynamicMarkers\IDynamicMarkerProvider.cs" />
+    <Compile Include="DynamicMarkers\LockedDoorMarkerMutator.cs" />
+    <Compile Include="DynamicMarkers\LootMarkerProvider.cs" />
+    <Compile Include="DynamicMarkers\OtherPlayersMarkerProvider.cs" />
+    <Compile Include="DynamicMarkers\PlayerMarkerProvider.cs" />
+    <Compile Include="DynamicMarkers\SecretMarkerProvider.cs" />
+    <Compile Include="DynamicMarkers\TransitMarkerProvider.cs" />
+    <Compile Include="ExternalModSupport\ModDetection.cs" />
+    <Compile Include="ExternalModSupport\SamSWATHeliCrash\HeliCrashMarkerProvider.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="Patches\AirdropBoxOnBoxLandPatch.cs" />
+    <Compile Include="Patches\BattleUIScreenShowPatch.cs" />
+    <Compile Include="Patches\CommonUIAwakePatch.cs" />
+    <Compile Include="Patches\GameStartedPatch.cs" />
+    <Compile Include="Patches\GameWorldDestroyLootPatch.cs" />
+    <Compile Include="Patches\GameWorldOnDestroyPatch.cs" />
+    <Compile Include="Patches\GameWorldRegisterLootItemPatch.cs" />
+    <Compile Include="Patches\GameWorldUnregisterPlayerPatch.cs" />
+    <Compile Include="Patches\MapScreenClosePatch.cs" />
+    <Compile Include="Patches\MapScreenShowPatch.cs" />
+    <Compile Include="Patches\MenuLoadPatch.cs" />
+    <Compile Include="Patches\PlayerInventoryThrowItemPatch.cs" />
+    <Compile Include="Patches\PlayerOnDeadPatch.cs" />
+    <Compile Include="Patches\ShowViewButtonPatch.cs" />
+    <Compile Include="PlayerDotSpawner.cs" />
+    <Compile Include="Plugin.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestMarkerProvider.cs" />
+    <Compile Include="System\Runtime\CompilerServices\RefSafetyRulesAttribute.cs" />
+    <Compile Include="UI\Components\ILayerBound.cs" />
+    <Compile Include="UI\Components\LayerStatus.cs" />
+    <Compile Include="UI\Components\MapLabel.cs" />
+    <Compile Include="UI\Components\MapLayer.cs" />
+    <Compile Include="UI\Components\MapMarker.cs" />
+    <Compile Include="UI\Components\MapPeekComponent.cs" />
+    <Compile Include="UI\Components\MapView.cs" />
+    <Compile Include="UI\Components\PlayerMapMarker.cs" />
+    <Compile Include="UI\Components\TransformMapMarker.cs" />
+    <Compile Include="UI\Controls\AbstractTextControl.cs" />
+    <Compile Include="UI\Controls\CursorPositionText.cs" />
+    <Compile Include="UI\Controls\LevelSelectSlider.cs" />
+    <Compile Include="UI\Controls\MapSelectDropdown.cs" />
+    <Compile Include="UI\Controls\PlayerPositionText.cs" />
+    <Compile Include="UI\ModdedMapScreen.cs" />
+    <Compile Include="Utils\DumpUtils.cs" />
+    <Compile Include="Utils\EMiniMapPosition.cs" />
+    <Compile Include="Utils\GameUtils.cs" />
+    <Compile Include="Utils\MathUtils.cs" />
+    <Compile Include="Utils\QuestUtils.cs" />
+    <Compile Include="Utils\TextureUtils.cs" />
+    <Compile Include="Utils\UIUtils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
