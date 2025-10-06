@@ -1,5 +1,4 @@
 严重性	代码	说明	项目	文件	行	抑制状态
-错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\DynamicMarkers\OtherPlayersMarkerProvider.cs	318	
 错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\DynamicMarkers\AirdropMarkerProvider.cs	14	
 错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\DynamicMarkers\AirdropMarkerProvider.cs	25	
 错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\DynamicMarkers\AirdropMarkerProvider.cs	39	
@@ -62,6 +61,7 @@
 错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\DynamicMarkers\OtherPlayersMarkerProvider.cs	118	
 错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\DynamicMarkers\OtherPlayersMarkerProvider.cs	133	
 错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\DynamicMarkers\OtherPlayersMarkerProvider.cs	144	
+错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\DynamicMarkers\OtherPlayersMarkerProvider.cs	318	
 错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\DynamicMarkers\OtherPlayersMarkerProvider.cs	323	
 错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\DynamicMarkers\PlayerMarkerProvider.cs	18	
 错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\DynamicMarkers\PlayerMarkerProvider.cs	23	
@@ -80,5 +80,14 @@
 错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\DynamicMarkers\QuestMarkerProvider.cs	74	
 错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\DynamicMarkers\QuestMarkerProvider.cs	79	
 错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\UI\Components\MapMarker.cs	56	
+错误(活动)	CS0101	命名空间“DynamicMaps.UI”已经包含“MapsPeekComponent”的定义	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\UI\Components\MapView.cs	59	
+错误(活动)	CS0111	类型“MapsPeekComponent”已定义了一个名为“Awake”的具有相同参数类型的成员	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\UI\Components\MapView.cs	71	
+错误(活动)	CS0111	类型“MapsPeekComponent”已定义了一个名为“DelayedInitialization”的具有相同参数类型的成员	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\UI\Components\MapView.cs	85	
+错误(活动)	CS0111	类型“MapsPeekComponent”已定义了一个名为“FindMapPanelRecursive”的具有相同参数类型的成员	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\UI\Components\MapView.cs	165	
+错误(活动)	CS0111	类型“MapsPeekComponent”已定义了一个名为“Update”的具有相同参数类型的成员	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\UI\Components\MapView.cs	188	
+错误(活动)	CS0111	类型“MapsPeekComponent”已定义了一个名为“ShowMap”的具有相同参数类型的成员	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\UI\Components\MapView.cs	231	
+错误(活动)	CS0111	类型“MapsPeekComponent”已定义了一个名为“HideMap”的具有相同参数类型的成员	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\UI\Components\MapView.cs	239	
+错误(活动)	CS0111	类型“MapsPeekComponent”已定义了一个名为“OnDestroy”的具有相同参数类型的成员	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\UI\Components\MapView.cs	247	
+错误(活动)	CS0111	类型“MapsPeekComponent”已定义了一个名为“SetPeekEnabled”的具有相同参数类型的成员	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\UI\Components\MapView.cs	256	
 错误(活动)	CS0101	命名空间“DynamicMaps.UI”已经包含“ModdedMapScreen”的定义	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\UI\ModdedMapScreen.cs	8	
 错误(活动)	CS0246	未能找到类型或命名空间名“MapView”(是否缺少 using 指令或程序集引用?)	DynamicMaps	E:\Users\Administrator\Desktop\SPT-DynamicMaps-main\Utils\PlayerDotSpawner.cs	13	
